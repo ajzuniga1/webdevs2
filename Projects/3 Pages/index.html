@@ -22,24 +22,46 @@
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation. We hide it in small screens. -->
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a id= "link1" class="mdl-navigation__link" href="">Link1</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
-          </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Title</span>
         <nav class="mdl-navigation">
-          <a id= "link1" class="mdl-navigation__link" href="#">Link1</a>
-          <a id= "link2" class="mdl-navigation__link" href="#">Link2</a>
-          <a id= "link3" class="mdl-navigation__link" href="#">Link3</a>
-          <a class="mdl-navigation__link" href="">Link</a>
+          <a id= "link1" class="mdl-navigation__link" href="#">Home</a>
+          <a id= "link2" class="mdl-navigation__link" href="#">Description</a>
+          <a id= "link3" class="mdl-navigation__link" href="#">Ex.</a>
         </nav>
       </div>
-      <script>
+
+      <main class="mdl-layout__content">
+        <div id="screen1" class="screen page-content">
+          <h4> Topics:</h4>
+          <p>Art</p>
+          <button type="button" onclick="alert('Hello world!')">Description</button>
+          <p>Movies</p>
+          <button type="button" onclick="alert('Hello world!')">Description</button>
+          <p>Relaxation</p>
+          <button type="button" onclick="alert('Hello world!')">Description</button>
+        <div id="screen2" class="screen page-content">
+          <h4> Topics:</h4>
+          <p>Art</p>
+          <button type="button" onclick="alert('Hello world!')">Description</button>
+          <p>Movies</p>
+          <button type="button" onclick="alert('Hello world!')">Description</button>
+          <p>Relaxation</p>
+          <button type="button" onclick="alert('Hello world!')">Description</button>
+          </div>
+        <div id="screen3" class="screen page-content">
+          <h4> Topics:</h4>
+          
+          <p>Art</p>
+          <p>Movies</p>
+          <p>Relaxation</p>
+      </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+    
+          <script>
           $(function(){
                 $("#screen1").show();
                 
@@ -55,12 +77,7 @@
                   $(".screen").hide();
                   $("#screen3").show();
                 })
+          })
       </script>
-      <main class="mdl-layout__content">
-        <div id="screen1" class="screen page-content">Screen1</div>
-        <div id="screen2" class="screen page-content">Screen2</div>
-        <div id="screen3" class="screen page-content">Screen3</div>
-      </main>
-    </div>
   </body>
 </html>
